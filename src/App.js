@@ -3,7 +3,7 @@ import axios from 'axios';
 import styles from './styles/home.module.css';
 
 function App() {
-    const api = "https://spacebook-backend.onrender.com";
+    const api = "https://backend-9v6g.onrender.com";
     const [posts, setPosts] = useState([])
     const [text, setText] = useState("")
 
