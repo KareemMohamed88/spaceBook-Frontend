@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import styles from '../styles/forms.module.css'
 const Register = () => {
 
-    const api = "http://localhost:5000";
+    const api = "https://spacebook-backend.onrender.com";
     const [users, setUsers] = useState([]);
     const [username, setName] = useState("");
     const [email, setEmail] = useState("");
