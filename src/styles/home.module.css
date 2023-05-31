@@ -1,0 +1,519 @@
+:root {
+    --mainColor: #EDEFF5;
+    --blue: #107AF6;
+    --white: #fff;
+    --textColor: rgba(105, 105, 105, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mainColor);
+    font-family: sans-serif;
+}
+
+.containerFluid {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.navBar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    background-color: var(--white);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    position: relative;
+}
+
+.navBar h2 {
+    color: var(--blue);
+}
+.navBar input {
+    width: 450px;
+    height: 35px;
+    border: 0;
+    border-radius: 20px;
+    background-color: var(--mainColor);
+    padding-left: 15px;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navBar section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.navBar section img {
+    width: 35px;
+    margin-left: 30px;
+}
+
+.navBar section ion-icon{
+    color: var(--blue);
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.navBar section .menu{
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    height: 70px;
+    align-items: center;
+    justify-content: end;
+    padding: 10%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    right: 0%;
+}
+
+.navBar section .menu a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.navBar section .menu.active{
+    display: flex;
+}
+
+.leftSide .head {
+    width: 90%;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.leftSide .head img {
+    margin-right: 20px;
+}
+
+.leftSide .head h4 {
+    margin-bottom: 5px;
+}
+
+.leftSide .head p {
+    font-weight: 400;
+    color: var(--textColor);
+}
+
+.leftSide .List {
+    width: 90%;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.leftSide .List ul li {
+    list-style: none;
+    width: 100%;
+    height: calc(400px / 6);
+    display: flex;
+    align-items: center;
+    padding: 0 6%;
+}
+
+.leftSide .List ul li span {
+    margin-right: 20px;
+}
+
+.leftSide .List ul li span ion-icon {
+    font-size: 1.5em;
+    color: var(--blue);
+}
+
+.leftSide .List ul li a {
+    color: var(--textColor);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.leftSide .List ul li:hover {
+    background-color: var(--mainColor);
+    border-left: 4px solid var(--blue);
+}
+
+.leftSide .invitations {
+    width: 90%;
+    height: fit-content;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 1px 6%;
+}
+
+.leftSide .invitations .heading,
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.leftSide .invitations .heading h3 {
+    color: var(--textColor);
+}
+
+.leftSide .invitations .heading span {
+    background-color: red;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.leftSide .invitations .foot button {
+    padding: 13px 21px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.leftSide .invitations .foot span ion-icon {
+    font-size: 1.4em;
+    transform: rotate(45deg);
+}
+
+.scrollSide {
+    padding: 20px;
+    height: 100vh;
+    padding-bottom: 10px;
+    overflow: scroll;
+}
+
+.storyes {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.storyes .story {
+    height: 100%;
+    border-radius: 10px;
+    width: 140px;
+    overflow: hidden;
+    position: relative;
+}
+
+.storyes .story .profileImage{
+    width: 40px;
+    position: absolute;
+    margin: 10px;
+    border: 4px solid var(--white);
+    border-radius: 50%;
+}
+
+.storyes .story::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.mobilePgesSection{
+    display: none;
+}
+.addPostInput {
+    width: 100%;
+    height: 60px;
+    background-color: var(--white);
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+    border-radius: 5px;
+}
+.addPostInput img{
+    width: 30px;
+}
+.addPostInput section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    gap: 30px;
+}
+
+.addPostInput section input {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+}
+
+.addPostInput button {
+    padding: 9px 22px;
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.Posts{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.Post {
+    width: 100%;
+    height: 180px;
+    background-color: var(--white);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 3%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.Post .head img{
+    width: 30px;
+}
+.Post .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: 20px;
+}
+
+.Post .head section {
+    display: flex;
+    align-items: center;
+}
+
+.Post .head section img {
+    margin-right: 20px;
+}
+
+.Post .head section span{
+    background-color: #bfdbfe;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.Post .head span {
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Post .head span:hover {
+    padding: 5px;
+    background: rgba(105, 105, 105, 0.4);
+}
+.Post .postContent{
+    height: fit-content;
+    height: 40px;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.Post .border{
+    width: 100%;
+    height: 2px;
+    background-color: var(--mainColor);
+    margin: 20px auto;
+}
+.Post .foot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-15px);
+}
+
+.Post .foot ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+
+}
+.Post .foot ul li span{
+    display: flex;
+}
+.Post .foot ul li span ion-icon{
+    margin-right: 10px;
+}
+.Post .foot ul li:first-child ion-icon{
+    color: red;
+}
+.Post .foot ul li h4{
+    font-weight: 500;
+}
+
+.rightSide section{
+    margin: 20px 5%;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--textColor);
+}
+
+.rightSide .requist {
+    width: 90%;
+    height: 140px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.rightSide .requist .name {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.rightSide .requist .name .userProfileImage {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.rightSide .requist .name p {
+    font-size: 17px;
+    color: var(--textColor);
+}
+
+.rightSide .requist .name p span {
+    font-weight: bold;
+    color: #333;
+}
+
+.rightSide .requist .AcceptDelete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+}
+
+.rightSide .requist .AcceptDelete button {
+    padding: 9px 30px;
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rightSide .requist .AcceptDelete button:last-child {
+    background-color: var(--mainColor);
+    color: #333;
+}
+
+.rightSide .friends{
+    width: 100%;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.rightSide .friends section{
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--textColor);
+}
+.rightSide .friends .List{
+    background-color: var(--white);
+    width: 100%;
+    height: 80%;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.rightSide .friends .List ul li{
+    list-style: none;
+    display: inline;
+}
+
+.rightSide .friends .List ul li span{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+.rightSide .friends .List ul li img{
+    width: 30px;
+}
+.rightSide .friends .List ul li span:before{
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 1px;
+    background: rgba(105, 105, 105, 0.2);
+    margin: 0 5%;
+    bottom: -30%;
+}
+.rightSide .friends .List ul li:last-child span::before{
+    background: none;
+}
+.rightSide .friends .List ul li span img{
+    margin: 0 10px;
+}
+
+.scrollSide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Track */
+::-webkit-scrollbar {
+    background: var(--blue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--white);
+    width: 40%;
+}
+@media (min-width:100px) and (max-width:400px) {
+    .Post .border{
+        margin: 5px 0;
+    }
+}
