@@ -44,6 +44,7 @@ body {
 .navBar h2 {
     color: var(--blue);
 }
+
 .navBar input {
     width: 450px;
     height: 35px;
@@ -70,13 +71,13 @@ body {
     margin-left: 30px;
 }
 
-.navBar section ion-icon{
+.navBar section ion-icon {
     color: var(--blue);
     font-size: 1.1em;
     cursor: pointer;
 }
 
-.navBar section .menu{
+.navBar section .menu {
     display: none;
     position: absolute;
     top: 60px;
@@ -90,7 +91,7 @@ body {
     right: 0%;
 }
 
-.navBar section .menu a{
+.navBar section .menu a {
     text-decoration: none;
     padding: 10px;
     background-color: var(--blue);
@@ -100,7 +101,7 @@ body {
     font-size: 14px;
 }
 
-.navBar section .menu.active{
+.navBar section .menu.active {
     display: flex;
 }
 
@@ -235,7 +236,7 @@ body {
     position: relative;
 }
 
-.storyes .story .profileImage{
+.storyes .story .profileImage {
     width: 40px;
     position: absolute;
     margin: 10px;
@@ -250,9 +251,11 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
 }
-.mobilePgesSection{
+
+.mobilePgesSection {
     display: none;
 }
+
 .addPostInput {
     width: 100%;
     height: 60px;
@@ -264,9 +267,11 @@ body {
     padding: 0 4%;
     border-radius: 5px;
 }
-.addPostInput img{
+
+.addPostInput img {
     width: 30px;
 }
+
 .addPostInput section {
     display: flex;
     align-items: center;
@@ -291,10 +296,12 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-.Posts{
+
+.Posts {
     display: flex;
     flex-direction: column-reverse;
 }
+
 .Post {
     width: 100%;
     height: 180px;
@@ -304,9 +311,11 @@ body {
     padding: 3%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-.Post .head img{
+
+.Post .head img {
     width: 30px;
 }
+
 .Post .head {
     display: flex;
     align-items: center;
@@ -324,7 +333,7 @@ body {
     margin-right: 20px;
 }
 
-.Post .head section span{
+.Post .head section span {
     background-color: #bfdbfe;
     color: var(--blue);
     font-size: 12px;
@@ -341,11 +350,13 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+
 .Post .head span:hover {
     padding: 5px;
     background: rgba(105, 105, 105, 0.4);
 }
-.Post .postContent{
+
+.Post .postContent {
     height: fit-content;
     height: 40px;
     text-align: end;
@@ -353,13 +364,15 @@ body {
     align-items: center;
     flex-direction: row-reverse;
 }
-.Post .border{
+
+.Post .border {
     width: 100%;
     height: 2px;
     background-color: var(--mainColor);
     margin: 20px auto;
 }
-.Post .foot{
+
+.Post .foot {
     width: 100%;
     display: flex;
     align-items: center;
@@ -367,27 +380,31 @@ body {
     transform: translateY(-15px);
 }
 
-.Post .foot ul li{
+.Post .foot ul li {
     display: inline-block;
     list-style: none;
     margin: 0 20px;
     cursor: pointer;
 
 }
-.Post .foot ul li span{
+
+.Post .foot ul li span {
     display: flex;
 }
-.Post .foot ul li span ion-icon{
+
+.Post .foot ul li span ion-icon {
     margin-right: 10px;
 }
-.Post .foot ul li:first-child ion-icon{
+
+.Post .foot ul li:first-child ion-icon {
     color: red;
 }
-.Post .foot ul li h4{
+
+.Post .foot ul li h4 {
     font-weight: 500;
 }
 
-.rightSide section{
+.rightSide section {
     margin: 20px 5%;
     font-weight: bold;
     font-size: 18px;
@@ -447,20 +464,21 @@ body {
     color: #333;
 }
 
-.rightSide .friends{
+.rightSide .friends {
     width: 100%;
     height: fit-content;
     margin: 20px auto;
     padding: 20px;
 }
 
-.rightSide .friends section{
+.rightSide .friends section {
     margin: 10px 0;
     font-weight: bold;
     font-size: 18px;
     color: var(--textColor);
 }
-.rightSide .friends .List{
+
+.rightSide .friends .List {
     background-color: var(--white);
     width: 100%;
     height: 80%;
@@ -468,21 +486,23 @@ body {
     border-radius: 10px;
 }
 
-.rightSide .friends .List ul li{
+.rightSide .friends .List ul li {
     list-style: none;
     display: inline;
 }
 
-.rightSide .friends .List ul li span{
+.rightSide .friends .List ul li span {
     display: flex;
     align-items: center;
     margin: 20px 0;
     position: relative;
 }
-.rightSide .friends .List ul li img{
+
+.rightSide .friends .List ul li img {
     width: 30px;
 }
-.rightSide .friends .List ul li span:before{
+
+.rightSide .friends .List ul li span:before {
     position: absolute;
     content: "";
     width: 90%;
@@ -491,10 +511,12 @@ body {
     margin: 0 5%;
     bottom: -30%;
 }
-.rightSide .friends .List ul li:last-child span::before{
+
+.rightSide .friends .List ul li:last-child span::before {
     background: none;
 }
-.rightSide .friends .List ul li span img{
+
+.rightSide .friends .List ul li span img {
     margin: 0 10px;
 }
 
@@ -512,8 +534,160 @@ body {
     background: var(--white);
     width: 40%;
 }
-@media (min-width:100px) and (max-width:400px) {
-    .Post .border{
-        margin: 5px 0;
+
+@media (min-width:5px) and (max-width:1000px) {
+    :root {
+        --mainColor: #EDEFF5;
+        --blue: #107AF6;
+        --white: #fff;
+        --textColor: rgba(105, 105, 105, 0.8);
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 2fr;
+        overflow: hidden;
+    }
+
+    .leftSide {
+        display: none;
+    }
+
+    .rightSide {
+        display: none;
+    }
+
+    .scrollSide {
+        width: 100%;
+    }
+
+    .scrollSide .storyes {
+        height: 180px;
+    }
+
+    .scrollSide .storyes .story {
+        width: 120px;
+    }
+
+    .mobilePgesSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: var(--white);
+    }
+
+    .mobilePgesSection ul li {
+        list-style: none;
+        margin: 0 15px;
+        display: inline;
+    }
+
+    .mobilePgesSection ul li a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: var(--blue);
+    }
+
+    @media (min-width:100px) and (max-width:850px) {
+        .popup {
+            width: 350px;
+            height: 350px;
+        }
+
+        .popup .inputfeild {
+            height: 150px;
+        }
+
+        .headImage {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            flex-direction: column;
+        }
+
+        .headImage .achitvets {
+            width: 90%;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 4% 0;
+        }
+    }
+
+    @media (min-width:100px) and (max-width:550px) {
+        .navBar h2 {
+            font-size: 19px;
+        }
+
+        .navBar section input {
+            width: 200px;
+        }
+
+        .scrollSide .storyes {
+            height: 170px;
+        }
+
+        .scrollSide .storyes .story {
+            width: 100px;
+        }
+
+        .mobilePgesSection ul li a {
+            font-size: 1.3em;
+        }
+    }
+
+    @media (min-width:100px) and (max-width:440px) {
+        .navBar section input {
+            display: none;
+        }
+
+        .navBar section img {
+            margin: unset;
+        }
+
+        .Post .border {
+            margin: 5px 0;
+        }
+    }
+
+    @media (min-width:100px) and (max-width:400px) {
+        .popup {
+            width: 300px;
+            height: 300px;
+        }
+
+        .popup .inputfeild {
+            height: 100px;
+        }
+
+        .scrollSide {
+            padding: 20px 10px;
+        }
+
+        .scrollSide .storyes {
+            height: 140px;
+        }
+
+        .scrollSide .storyes .story {
+            width: 80px;
+        }
+
+        .scrollSide .Posts .Post {
+            height: 150px;
+        }
+
+        .scrollSide .Posts .Post .foot ul li {
+            margin: 0 5px;
+        }
+
+    }
+
+    @media (min-width:100px) and (max-width:340px) {
+        .headImage .achitvets ul li {
+            margin: 0 5px;
+        }
     }
 }
