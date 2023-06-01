@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import styles from './styles/home.module.css';
+import styles from './styles/mobileScreen.module.css';
 
 function App() {
     const api = "https://backend-9v6g.onrender.com";
