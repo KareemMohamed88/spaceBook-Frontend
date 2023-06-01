@@ -1,0 +1,149 @@
+:root {
+    --mainColor: #EDEFF5;
+    --blue: #107AF6;
+    --white: #fff;
+    --textColor: rgba(105, 105, 105, 0.8);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr;
+    overflow: hidden;
+}
+
+.leftSide {
+    display: none;
+}
+
+.rightSide {
+    display: none;
+}
+
+.scrollSide {
+    width: 100%;
+}
+
+.scrollSide .storyes {
+    height: 180px;
+}
+
+.scrollSide .storyes .story {
+    width: 120px;
+}
+
+.mobilePgesSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: var(--white);
+}
+
+.mobilePgesSection ul li {
+    list-style: none;
+    margin: 0 15px;
+    display: inline;
+}
+
+.mobilePgesSection ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--blue);
+}
+
+@media (min-width:100px) and (max-width:850px) {
+    .popup {
+        width: 350px;
+        height: 350px;
+    }
+
+    .popup .inputfeild {
+        height: 150px;
+    }
+
+    .headImage {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
+    }
+    .headImage .achitvets {
+        width: 90%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4% 0;
+    }
+}
+
+@media (min-width:100px) and (max-width:550px) {
+    .navBar h2 {
+        font-size: 19px;
+    }
+
+    .navBar section input {
+        width: 200px;
+    }
+
+    .scrollSide .storyes {
+        height: 170px;
+    }
+
+    .scrollSide .storyes .story {
+        width: 100px;
+    }
+
+    .mobilePgesSection ul li a {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width:100px) and (max-width:440px) {
+    .navBar section input {
+        display: none;
+    }
+
+    .navBar section img {
+        margin: unset;
+    }
+}
+
+@media (min-width:100px) and (max-width:400px) {
+    .popup {
+        width: 300px;
+        height: 300px;
+    }
+
+    .popup .inputfeild {
+        height: 100px;
+    }
+
+    .scrollSide {
+        padding: 20px 10px;
+    }
+
+    .scrollSide .storyes {
+        height: 140px;
+    }
+
+    .scrollSide .storyes .story {
+        width: 80px;
+    }
+
+    .scrollSide .Posts .Post {
+        height: 150px;
+    }
+
+    .scrollSide .Posts .Post .foot ul li {
+        margin: 0 5px;
+    }
+    
+}
+
+@media (min-width:100px) and (max-width:340px) {
+    .headImage .achitvets ul li  {
+        margin: 0 5px;
+    }
+}
